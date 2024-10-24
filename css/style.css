@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #080808;
+    color: #FFF;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 3px solid #080808;
+}
+/*Grid de Produtos*/
+.container {
+    background-color: #EEE;
+    min-height: 60vh;
+    padding: 50px;
+}
+
+.products-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card{
+    width: 31%;
+    display: inline-block;
+    margin: 1% 1%;
+    padding: 15px;
+}
+
+.product-image {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+#img-1 {
+    background-image: url('../img/Vaso-1.jpg');
+}
+#img-2 {
+    background-image: url('../img/Vaso-4.jpg');
+}
+#img-3 {
+    background-image: url('../img/Vaso-5.jpg');
+}
+#img-4 {
+    background-image: url('../img/Bandeja-2.jpg');
+}
+#img-5 {
+    background-image: url('../img/Bandeja-3.jpg');
+}
+#img-6 {
+    background-image: url('../img/Bandeja-4.jpg');
+}
+
+h3{
+    margin-bottom: 10px;
+    color: black;
+    border-left: 5px solid black;
+    padding-left: 7px;
+    font-size: 24px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.bold {
+    font-weight:bold;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color:rgb(0, 0, 0);
+    color:#fff;
+    padding: 15px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.btn:hover {
+    background-color: #6a6d6b;
+
+}
+    
+
+/* Footer */
+footer {
+    background-color: #080808;
+    color: #fff;
+    border-top: 3px solid #080808;
+    text-align: center;
+    padding: 80px;
+}
+
+/*Responsividade*/
+@media (max-width: 560px) {
+    .container {
+        padding: 20px;  
+        display: flex;
+        flex-direction: column;  
+        align-items: center;  
+    }
+
+    .card {
+        width: 100%;  
+        margin: 10px 0;  
+        padding: 15px;  
+        display: block;
+    }
+}
